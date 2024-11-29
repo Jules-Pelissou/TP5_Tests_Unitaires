@@ -7,8 +7,8 @@ package bowling;
  */
 public class PartieMonoJoueur {
 
-    private final Tour premierTour; // Le premier tour
-    private Tour tourCourant; // Le tour en cours
+    protected final Tour premierTour; // Le premier tour
+    protected Tour tourCourant; // Le tour en cours
 
     /**
      * Constructeur

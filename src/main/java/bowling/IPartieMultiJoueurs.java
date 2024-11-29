@@ -13,7 +13,8 @@ public interface IPartieMultiJoueurs {
 	 * de la forme "Prochain tir : joueur Bastide, tour n° 1, boule n° 1"
 	 * @throws java.lang.IllegalArgumentException si le tableau est vide ou null
 	 */
-	public String demarreNouvellePartie(String[] nomsDesJoueurs) throws IllegalArgumentException ;
+	public String demarreNouvellePartie(String[] nomsDesJoueurs)
+		throws IllegalArgumentException;
 	
 	/**
 	 * Enregistre le nombre de quilles abattues pour le joueur courant, dans le tour courant, pour la boule courante
@@ -23,7 +24,9 @@ public interface IPartieMultiJoueurs {
 	 * ou bien "Partie terminée" si la partie est terminée.
 	 * @throws java.lang.IllegalStateException si la partie n'est pas démarrée.
 	 */
-	public String enregistreLancer(int nombreDeQuillesAbattues) throws IllegalStateException;
+	public String enregistreLancerMulti(int nombreDeQuillesAbattues)
+		throws IllegalStateException;
+	
 	
 	/**
 	 * Donne le score pour le joueur playerName
@@ -31,7 +34,9 @@ public interface IPartieMultiJoueurs {
 	 * @return le score pour ce joueur
 	 * @throws IllegalArgumentException si nomDuJoueur ne joue pas dans cette partie
 	 */
-	public int scorePour(String nomDuJoueur) throws IllegalArgumentException;
+	public int scorePour(String nomDuJoueur)
+		throws IllegalArgumentException;
+	
 	
 	
 }

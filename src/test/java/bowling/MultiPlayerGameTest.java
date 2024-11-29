@@ -1,10 +1,9 @@
 package bowling;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertFalse;
-import static org.junit.jupiter.api.Assertions.assertTrue;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.*;
 
 class MultiPlayerGameTest {
 
@@ -62,17 +61,4 @@ class MultiPlayerGameTest {
 		assertEquals(5, partie.scorePour("Juan"), "Le score n'est pas le bon");
 	}
 	
-	/**
-	@Test
-	void testTourSuivant(){
-		partie.demarreNouvellePartie(joueurs2);
-		partie.enregistreLancerMulti(8);
-		partie.enregistreLancerMulti(1);
-		partie.enregistreLancerMulti(8);
-		partie.enregistreLancerMulti(1);
-		partie.enregistreLancerMulti(8);
-		assertEquals(2, partie.numeroTourCourant(), "Le tour doit être le second");
-	}
-	**/
-
 }
